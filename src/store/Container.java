@@ -2,8 +2,12 @@ package store;
 
 public abstract class Container {
 
-	private double[] values;
+	protected double[] values;
 
+	public Container(int size){
+		this.values = new double[size];
+	}
+	
 	public abstract void addAtIndex(double value, int index);
 	
 	

@@ -4,11 +4,10 @@ import java.util.concurrent.Semaphore;
 
 public class LockingContainer extends Container {
 
-	double[] values;
 	Semaphore[] locks;
 	
 	public LockingContainer(int size){
-		this.values = new double[size];
+		super(size);
 		this.locks = new Semaphore[size];
 		
 		for(int i = 0; i < size; i++){
@@ -25,7 +24,7 @@ public class LockingContainer extends Container {
 			e.printStackTrace();
 		}
 		
-		this.values[index] += value;
+		super.values[index] += value;
 		
 		this.locks[index].release();
 		

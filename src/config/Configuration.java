@@ -66,7 +66,7 @@ public class Configuration {
 	public String toString(){
 		StringBuffer sb = new StringBuffer();
 		
-		sb.append("\n Configuration------");
+		sb.append("\n-Configuration------");
 		
 		sb.append("\nThreads:\t");
 		sb.append(this.numThreads);
