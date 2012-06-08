@@ -25,6 +25,7 @@ public class Launcher {
 		long start;
 		long stop;
 		for(int i = 0; i < numIterations; i++){
+			System.out.println("Iteration " + (i+1));
 			System.gc();
 			start = System.currentTimeMillis();
 
