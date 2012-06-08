@@ -6,7 +6,7 @@ public class Configuration {
 	
 	protected int numThreads = 32;
 	protected int arraySize = 10*million; // in millions
-	protected long workLoad = 10; // in milliseconds
+	protected long workLoad = 0; // in milliseconds
 	protected int numIterations = 100;
 	protected int workers = 1000;
 	

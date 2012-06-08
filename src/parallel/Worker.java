@@ -17,11 +17,13 @@ public class Worker implements Runnable{
 	public void run() {
 		
 		for(int i = 0; i < container.size(); i++){
-			try {
-				Thread.sleep(this.workload);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if(this.workload >= 5){
+				try {
+					Thread.sleep(this.workload);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			container.addAtIndex(1.0, i);
 		}
