@@ -8,7 +8,18 @@ Say you have a problem where you have a very large array that you need to update
 
 The separate array takes more memory, but should let you update parts of the array that have nothing to do with each other.
 
-The synchronized array is easier to implement, but may lead to more contention.
+The synchronized array is easier to implement, but may lead to more contention.  Or, in a nutshell:
+
+    synchronized(values){
+        values[index] += x;
+    }
+
+VS
+
+    locks[index].acquire();
+    values[index] += x;
+    locks[index].release();
+
 
 ## How do I use it?
 
