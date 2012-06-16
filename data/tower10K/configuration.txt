@@ -1,0 +1,5 @@
+Threads:        32
+Iterations:     100
+Array size:     10000
+Number of Workers:      1000
+Milliseconds per task:  0
