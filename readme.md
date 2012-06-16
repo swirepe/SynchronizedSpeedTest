@@ -31,7 +31,7 @@ VS
     # number of threads to initialize the pool with
     threads = 32
     
-    # number of elements in the array, in millions
+    # number of elements in the array, in thousands
     size = 10
     
     # milliseconds per action, simulating something hard

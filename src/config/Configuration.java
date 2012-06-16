@@ -2,10 +2,10 @@ package config;
 
 public class Configuration {
 
-	private static final int million = 1000000;
+	private static final int thousand = 1000;
 	
 	protected int numThreads = 32;
-	protected int arraySize = 10*million; // in millions
+	protected int arraySize = 10*thousand; // in thousands
 	protected long workLoad = 0; // in milliseconds
 	protected int numIterations = 100;
 	protected int workers = 1000;
@@ -30,7 +30,7 @@ public class Configuration {
 
 
 	public void setArraySize(int arraySize) {
-		this.arraySize = arraySize * million;
+		this.arraySize = arraySize * thousand;
 	}
 
 
